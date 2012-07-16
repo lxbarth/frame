@@ -68,6 +68,7 @@ li {
 
 a {
   color: #489;
+  text-decoration: none;
   }
 em {
   font-weight: bold;
@@ -171,7 +172,6 @@ a.wax-fullscreen {
   }
 
 a.zoomer {
-  text-decoration:none;
   position:absolute;
   line-height:25px;
   font-size:20px;
@@ -224,6 +224,8 @@ a.zoomer {
   box-shadow:rgba(0,0,0,0.1) 3px 3px 3px;
   -moz-box-shadow:rgba(0,0,0,0.1) 3px 3px 3px;
   -webkit-box-shadow:rgba(0,0,0,0.1) 3px 3px 3px;
+  overflow: auto;
+  max-height: 90%;
   }
 
 .wax-fade {
