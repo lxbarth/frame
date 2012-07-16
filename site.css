@@ -163,7 +163,8 @@ a.wax-fullscreen {
   background:#f5f5f5;
   }
 a.zoomer,
-a.wax-fullscreen {
+a.wax-fullscreen,
+a.close {
   color: #ddddd8;
   background-color: #222220;
   border-bottom: 1px solid #333;
@@ -241,6 +242,17 @@ a.zoomer {
     position:absolute;
     top:0px;
     right:0px;
+    width: 10px;
+    text-align: center;
+    font-weight: bold;
+    height: 20px;
+    padding: 0 5px;
+    overflow: hidden;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    }
+    .wax-tooltip .close:before {
+      content: 'x  ';
     }
 
 a.wax-fullscreen {
