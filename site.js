@@ -39,9 +39,9 @@ window.onload = function() {
         wax.mm.legend(m, tilejson).appendTo(m.parent);
 
         // Populate dynamic fields from tilejson.
-        document.getElementById('title').innerHTML = tilejson.name;
-        document.getElementById('description').innerHTML = tilejson.description;
-        document.getElementById('attribution').innerHTML = tilejson.attribution;
+        document.getElementById('title').innerHTML = tilejson.name || '';
+        document.getElementById('description').innerHTML = tilejson.description || '';
+        document.getElementById('attribution').innerHTML = tilejson.attribution || '';
 
         // Hide instructions and display all dynamic elements.
         document.getElementById('instructions').style.display = 'none';
