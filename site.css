@@ -201,8 +201,16 @@ a.zoomer {
   right:5px;
   bottom:5px;
   z-index:999999;
+  max-width: 330px;
+  font-size: 12px;
   }
-
+  /* interaction fix */
+  .wax-legends ul {
+    margin: 5px 0;
+  }
+  .wax-legends li {
+    margin-bottom:0;
+  }
 .wax-legends .wax-legend {
   padding:10px;
   border-radius: 3px;
