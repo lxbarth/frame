@@ -1,7 +1,4 @@
 window.onload = function() {
-    // TileJSON URL pointing to MapBox Hosting.
-    var url = 'http://a.tiles.mapbox.com/v3/' +
-        document.location.search.substr(1) +'.jsonp';
 
     // Reveal all dynamically populated elements.
     var reveal = function() {
