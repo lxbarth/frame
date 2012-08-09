@@ -89,6 +89,7 @@ em {
   box-shadow:         rgba(0, 0, 0, 1) 0 0  60px;
   -moz-box-shadow:    rgba(0, 0, 0, 1) 0 0  60px;
   -webkit-box-shadow: rgba(0, 0, 0, 1) 0 0  60px;
+  background-color: #222220;
   }
 
 #header {
@@ -145,141 +146,8 @@ em {
       color: #6cadbe;
       }
 
-/* --------------------------------------------------------
-  Wax, largely taken from theme/controls.css
---------------------------------------------------------- */
+/* Map controls */
 
-a.zoomer,
-.wax-legends,
-.wax-tooltip,
-a.wax-fullscreen {
-  box-shadow:         rgba(0,0,0,0.1) 3px 3px 3px;
-  -moz-box-shadow:    rgba(0,0,0,0.1) 3px 3px 3px;
-  -webkit-box-shadow: rgba(0,0,0,0.1) 3px 3px 3px;
-  }
-.wax-legends,
-.wax-tooltip {
-  color: #222220;
-  background:#f5f5f5;
-  }
-a.zoomer,
-a.wax-fullscreen,
-a.close {
-  color: #ddddd8;
-  background-color: #222220;
-  border-bottom: 1px solid #333;
-  border-right: 1px solid #333;
-  margin: 5px;
-  }
-
-a.zoomer {
-  position:absolute;
-  line-height:25px;
-  font-size:20px;
-  z-index:99999;
-  text-align:center;
-  width:25px;
-  height:25px;
-  }
-  a.zoomin {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    -moz-border-top-left-radius: 3px;
-    -moz-border-bottom-left-radius: 3px;
-    }
-  a.zoomout {
-    left:25px;
-    border-left: 1px solid #333;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    -moz-border-top-right-radius: 3px;
-    -moz-border-bottom-right-radius: 3px;
-    }
-
-.wax-legends {
-  position:absolute;
-  right:5px;
-  bottom:5px;
-  z-index:999999;
-  max-width: 330px;
-  font-size: 12px;
-  }
-  /* interaction fix */
-  .wax-legends ul {
-    margin: 5px 0;
-  }
-  .wax-legends li {
-    margin-bottom:0;
-  }
-.wax-legends .wax-legend {
-  padding:10px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  }
-
-.wax-tooltip {
-  z-index:999999;
-  position:absolute;
-  padding:10px;
-  -webkit-user-select:auto;
-  right:5px;
-  top:5px;
-  max-width:300px;
-  opacity:1;
-  -webkit-transition:opacity 150ms;
-  -moz-transition:opacity 150ms;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  box-shadow:rgba(0,0,0,0.1) 3px 3px 3px;
-  -moz-box-shadow:rgba(0,0,0,0.1) 3px 3px 3px;
-  -webkit-box-shadow:rgba(0,0,0,0.1) 3px 3px 3px;
-  overflow: auto;
-  max-height: 90%;
-  }
-
-.wax-fade {
-  opacity:0;
-  transition: opacity .5s;
-  -moz-transition: opacity .5s; /* Firefox 4 */
-  -webkit-transition: opacity .5s; /* Safari and Chrome */
-  -o-transition: opacity .5s; /* Opera */
-  }
-
-  .wax-tooltip .close {
-    display:block;
-    position:absolute;
-    top:0px;
-    right:0px;
-    width: 10px;
-    text-align: center;
-    font-weight: bold;
-    height: 20px;
-    padding: 0 5px;
-    overflow: hidden;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    }
-    .wax-tooltip .close:before {
-      content: 'x  ';
-    }
-
-a.wax-fullscreen {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 99999;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  content: '';
-  background: #222220 url(sprite.png) -171px -3px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  text-indent: -9999px;
-  }
-  #map.wax-fullscreen-map a.wax-fullscreen {
-    background: #222220 url(sprite.png) -141px -3px;
-    }
 #map.wax-fullscreen-map {
   position:fixed !important;
   width:auto !important;
@@ -290,3 +158,7 @@ a.wax-fullscreen {
   bottom:0;
   z-index:999999999999;
   }
+
+.map-tooltip {
+  color: #333;
+}
