@@ -34,35 +34,7 @@ window.onload = function() {
         document.getElementById('instructions').style.display = 'none';
         reveal();
     });
-    // wax.tilejson(url, function(tilejson) {
-    //     // Set up map.
-    //     var m = new MM.Map('map',
-    //     new wax.mm.connector(tilejson));
-    // 
-    //     // Set zoom range and default location.
-    //     m.setZoomRange(tilejson.minzoom, tilejson.maxzoom);
-    //     !document.location.hash &&
-    //         m.setCenterZoom(new MM.Location(
-    //             tilejson.center[1],
-    //             tilejson.center[0]),
-    //             tilejson.center[2]);
-    // 
-    //     // Set up location tracking in URL.
-    //     new MM.Hash(m);
-    // 
-    //     // Set up zoomer and fullscreen.
-    //     wax.mm.zoomer(m).appendTo(m.parent);
-    //     wax.mm.fullscreen(m, tilejson).appendTo(document.getElementById('map'));
-    // 
-    //     // Set up interaction and legends.
-    //     wax.mm.interaction()
-    //         .map(m)
-    //         .tilejson(tilejson)
-    //         .on(wax.tooltip().animate(true).parent(m.parent).events());
-    //     wax.mm.legend(m, tilejson).appendTo(m.parent);
-    // 
-    // });
 
-    // Wax doesn't call us back if there's an error. Cheat.
+    // Mapbox.js doesn't call us back if there's an error. Cheat.
     setTimeout(reveal, 750);
 };
