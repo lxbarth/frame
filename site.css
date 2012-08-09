@@ -159,6 +159,7 @@ em {
   z-index:999999999999;
   }
 
-.map-tooltip {
+.map-tooltip,
+.map-legends {
   color: #333;
 }
