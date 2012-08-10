@@ -8,21 +8,16 @@ window.onload = function() {
         }
     };
 
-    mapbox.load(document.location.search.substr(1), function(o) {
-        // Create map, set location.
-        var map = mapbox.map('map');
-        map.addLayer(o.layer);
-        !document.location.hash &&
-            map.zoom(o.zoom).center(o.center);
+    mapbox.auto('map', document.location.search.substr(1), function(map, o) {
 
         // Set up map.
-        map.interaction.auto();
         map.ui.hash.add();
-        map.ui.zoomer.add();
         map.ui.fullscreen.add();
-        map.ui.zoombox.add();
         map.ui.legend.add();
         map.ui.refresh();
+
+        !document.location.hash &&
+            map.zoom(o.zoom).center(o.center);
 
         // Populate dynamic fields from tilejson.
         document.getElementById('title').innerHTML = o.name || '';
